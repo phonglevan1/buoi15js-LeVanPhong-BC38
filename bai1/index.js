@@ -14,7 +14,8 @@ function student() {
     mart = parseFloat(mart);
     tong = (point_1+point_2+point_3) + area + supject;
     if(point_1===0||point_2===0||point_3===0){
-        document.getElementById('resul').innerHTML = "Bạn đã rớt: có điểm nhỏ hơn 0: ";
+        document.getElementById('resul').innerHTML = "Bạn đã rớt: vì có điểm nhỏ hơn 0 ";
+        document.getElementById("resul").style.color = "red";
     }
     else if(tong<mart){
         document.getElementById('resul').innerHTML = "Bạn đã rớt: tổng điểm: "+ tong;
@@ -22,6 +23,7 @@ function student() {
     }
     else if(tong>=mart){
         document.getElementById('resul').innerHTML = "Bạn đã đậu: tổng điểm: "+ tong;
+        document.getElementById("resul").style.color = "blue";
     }
     else{
         document.getElementById('resul').innerHTML = "xin nhập lại";
