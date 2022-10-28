@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="student">
+        <h1>Quản Lý Tuyển Sinh Viên</h1>
+        <form action="sss">
+            <input id="txt-mart" type="text" placeholder="Điểm chuẩn" value="">
+            <select id="area">
+                <option value="0">--chọn vùng--</option>
+                <option value="2">A</option>
+                <option value="1">B</option>
+                <option value="0.5">C</option>
+            </select>
+            <select id="supject">
+                <option value="0" >--chọn đối tượng--</option>
+                <option value="2.5">1</option>
+                <option value="1.5">2</option>
+                <option value="1">3</option>
+            </select>
+        </form>
+        <form action="">
+            <input id="txt-point-1" type="text" placeholder="Điểm thứ 1" value="">
+            <input id="txt-point-2" type="text" placeholder="Điểm thứ 2" value="">
+            <input id="txt-point-3" type="text" placeholder="Điểm thứ 3" value="">
+        </form>
+        <button type="button" onclick="student()">kết quả</button><br>
+        <span id="resul"></span>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
